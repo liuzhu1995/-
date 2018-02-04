@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择期团</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="style/Normalize.css">
+    <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="padding_300">
+<header class="header_box">
+    <span class="return_before">
+        <i class="fa fa-chevron-left"></i>
+    </span>
+   <div class="r_title">选择期团</div>
+</header>
+<!--日历begin-->
+<div class="column-calendar">
+    <div class="time_price_bar">
+        <div class="top_nav" id="top_nav">
+            <ul class="tabs">
+                <li class="tab act"></li>
+                <li class="tab"></li>
+                <li class="tab"></li>
+                <li class="tab"></li>
+                <li class="tab"></li>
+            </ul>
+        </div>
+        <div class="calendar" id="calendar">
+            <table>
+                <tbody >
+                <tr class="week">
+                    <th>日</th>
+                    <th>一</th>
+                    <th>二</th>
+                    <th>三</th>
+                    <th>四</th>
+                    <th>五</th>
+                    <th>六</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <input type="hidden" id="hidDateArr" value='[
+                                        {"id":1654346540,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-20","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346570,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-23","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346571,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-24","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346572,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-25","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346573,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-26","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346574,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-27","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346575,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-30","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346576,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-11-31","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346577,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-01","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346578,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-02","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346579,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-03","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346580,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-06","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346581,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-07","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346582,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2017-12-08","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346583,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":359,"child":188,"stock":0,"date":"2017-12-09","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346584,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":456,"child":188,"stock":0,"date":"2017-12-10","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346585,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":789,"child":188,"stock":0,"date":"2017-12-13","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346586,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":263,"child":188,"stock":0,"date":"2017-12-14","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346587,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":467,"child":356,"stock":0,"date":"2017-12-15","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346588,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":138,"child":108,"stock":0,"date":"2017-12-16","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346589,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":895,"child":188,"stock":0,"date":"2017-12-17","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346590,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":179,"child":457,"stock":0,"date":"2017-12-20","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346591,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":257,"child":298,"stock":0,"date":"2017-12-21","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346592,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":789,"child":473,"stock":0,"date":"2017-12-22","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346593,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":123,"child":752,"stock":0,"date":"2017-12-23","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346594,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":324,"child":769,"stock":0,"date":"2017-12-24","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346595,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":645,"child":728,"stock":0,"date":"2017-12-27","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346596,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":789,"child":361,"stock":0,"date":"2017-12-28","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346597,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":753,"child":785,"stock":0,"date":"2017-12-29","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346598,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":756,"child":107,"stock":0,"date":"2017-12-30","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346599,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":236,"child":348,"stock":0,"date":"2018-1-01","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346600,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":999,"child":743,"stock":0,"date":"2018-1-04","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346601,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":752,"child":888,"stock":0,"date":"2018-1-05","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346602,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":795,"child":423,"stock":0,"date":"2018-1-06","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346603,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":159,"child":188,"stock":0,"date":"2018-1-07","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346604,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":1335,"child":188,"stock":0,"date":"2018-1-08","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346541,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":2335,"child":188,"stock":0,"date":"2018-1-11","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346542,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":3335,"child":188,"stock":0,"date":"2018-1-12","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346543,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":4335,"child":188,"stock":0,"date":"2018-1-13","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346544,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":5335,"child":188,"stock":0,"date":"2018-1-14","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346545,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":6335,"child":188,"stock":0,"date":"2018-1-15","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346546,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-18","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346547,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-19","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346548,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-20","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346549,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-21","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346524,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-22","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346525,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-25","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346526,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-26","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346527,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-27","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346528,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-28","opDate":null,"isClose":0,"fixedFlag":0},
+                                        {"id":1654346529,"delFlag":0,"opTime":null,"opUid":0,"opName":"","productId":5173495,"price":335,"child":188,"stock":0,"date":"2018-1-29","opDate":null,"isClose":0,"fixedFlag":0}
+                                        ]' autocomplete="off" />
+</div>
+<!--日历end-->
+<div class="text_discount">
+    <div class="text">
+        <span>日历价格为当日最低优惠价,点击下一步选择您可用的优惠.</span>
+        <span>最低优惠价¥2408 = 途牛价¥3008 - 最大优惠¥600</span>
+    </div>
+    <div class="discount_bar">
+        <div class="dis_more">
+            可选优惠
+            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+        </div>
+        <div class="dis_content">
+            <ol>
+                <li>国内跟团4人起订立减600元/成人</li>
+                <li>国内跟团立减500/成人</li>
+                <li>国内游4人起订立减1800元/单</li>
+                <li>【购物返券】预定海南相关线路，免税易购消费享途牛满额立减优惠</li>
+                <li>【购物返券】预定海南相关线路，免税易购消费享途牛满额立减优惠</li>
+                <li>翼支付11月满100减20（最高立减20/单）</li>
+                <li>点评返现5元，抵用券20元</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<ul class="people_price">
+    <li class="adult">
+        <div class="p_title">成人</div>
+        <div class="number_bar">
+            <span class="left_btn" id="left_btn">-</span>
+            <div class="int_bar">
+                <input type="text" value="2" class="adult_number" onfocus="this.blur()">
+            </div>
+            <span class="right_btn" id="right_btn">+</span>
+        </div>
+    </li>
+    <li class="child">
+        <div class="p_title">
+            儿童
+            <i></i>
+        </div>
+        <div class="number_bar">
+            <span class="c_left_btn" id="c_left_btn">-</span>
+            <div class="int_bar">
+                <input type="text" value="0" class="child_number" onfocus="this.blur()">
+            </div>
+            <span class="c_right_btn" id="c_right_btn">+</span>
+        </div>
+    </li>
+</ul>
+<div class="next_page">
+    <div class="text_bar">
+        下一步 <br>
+        选择资源优惠
+    </div>
+</div>
+<div class="popup_bar">
+    <div class="p_wrap"></div>
+    <div class="popup">
+        <div class="title">
+            请先选择出发团期
+        </div>
+        <div class="confirm">
+            确认
+        </div>
+    </div>
+</div>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/qituan.js"></script>
+<script src="javascript/calendar.js"></script>
+</body>
+</html>

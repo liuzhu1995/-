@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增常用游客</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="style/Normalize.css">
+    <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="new_common">
+<header>
+    <span class="return_before">
+        <i class="fa fa-chevron-left"></i>
+    </span>
+    <div class="r_title">新增常用游客</div>
+    <span class="r_confirm">保存</span>
+</header>
+<div class="people_info">
+    <ul>
+        <li>
+            <span>姓名</span>
+            <input type="text" class="name" placeholder="必填">
+        </li>
+        <li>
+            <span>手机号</span>
+            <input type="text" class="phone_num" placeholder="选填">
+        </li>
+        <li>
+            <span>邮箱</span>
+            <input type="text" class="email" placeholder="选填">
+        </li>
+        <li class="n_type">
+            <span>证件类型</span>
+            <select name="" id="select">
+                <option value="身份证">身份证</option>
+                <option value="护照">护照</option>
+                <option value="港澳通行证">港澳通行证</option>
+                <option value="台湾通行证">台湾通行证</option>
+                <option value="军官证">军官证</option>
+                <option value="台胞证">台胞证</option>
+                <option value="回乡证">回乡证</option>
+                <option value="户口簿">户口簿</option>
+                <option value="出生证明">出生证明</option>
+            </select>
+            <span class="keep">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </li>
+        <li id="paper_num">
+            <span>证件号码</span>
+            <input type="text" class="certificates" placeholder="必填">
+        </li>
+        <li id="paper_time">
+            <span>证件有效期</span>
+            <input type="text">
+        </li>
+        <li id="english_surname">
+            <span>英文姓</span>
+            <input type="text" placeholder="如中文名为吴彦祖,请填写吴">
+        </li>
+        <li id="english_name">
+            <span>英文名</span>
+            <input type="text" placeholder="如中文名为吴彦祖,请填写彦祖">
+        </li>
+        <li id="gender">
+            <span>性别</span>
+            <select name="" id="">
+                <option value="">请选择</option>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+            <span class="keep">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </li>
+        <li id="birthday">
+            <span>生日</span>
+            <input type="text" placeholder="必填">
+        </li>
+        <li id="nationality">
+            <span>国籍</span>
+            <input type="text" placeholder="必填">
+        </li>
+        <li id="issue_place">
+            <span>证件签发地</span>
+            <input type="text">
+        </li>
+    </ul>
+</div>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/resources.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>提交订单</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="style/Normalize.css">
+    <link rel="stylesheet" href="icon/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="submit_page">
+<header class="header_box">
+    <span class="return_before">
+        <i class="fa fa-chevron-left"></i>
+    </span>
+    <div class="title">2/2提交订单</div>
+</header>
+<div class="main">
+    <div class="contacts_info">
+        <div class="title">联系人信息</div>
+        <form action="" id="form_one">
+            <ul class="c_content">
+                <li class="c_contacts">
+                    <span>联系人</span>
+                    <input type="text" id="cname" name="myname"
+                           placeholder="请输入联系人"  required>
+                </li>
+                <li class="phone_num">
+                    <span>手机</span>
+                    <input type="text" id="phone" name="phone" maxlength="11" placeholder="请输入手机号">
+                </li>
+                <li class="email">
+                    <span>邮箱</span>
+                    <input type="text" id="cemail"  placeholder="请填写您的邮箱">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="personal_info">
+        <div class="title">
+            出游人信息
+            <span>2成人</span>
+        </div>
+        <ul class="addTo">
+            <li class="addTo_item add_name">
+                <span>吴彦祖</span>
+                <span>刘德华</span>
+            </li>
+            <li class="addTo_item">
+                <span class="tit">
+                    成人1
+                </span>
+                <span class="txt">
+                    请选择成人游客
+                </span>
+            </li>
+            <li class="addTo_item">
+                <span class="tit">
+                    成人2
+                </span>
+                <span class="txt">
+                    请选择成人游客
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="limit">
+        <div class="title">
+            出游人限制
+        </div>
+        <div class="content_bar">
+            <p>本产品不支持孕妇出游</p>
+            <p>不支持全是未成年人出游</p>
+            <p>不接受大于80周岁(含)出游人</p>
+        </div>
+        <div class="tip_confirm">
+            <div class="selece"></div>
+            我确定所有出游人满足出游条件
+        </div>
+    </div>
+    <div class="confirm_clause">
+        <div class="selece"></div>
+        <span> 我已阅读并接受</span>
+        <a href="#">
+            旅游合同、保险经纪委托合同、保险条款等内容
+        </a>
+    </div>
+</div>
+<div class="sPage_footer">
+    <div class="total">
+        总价:
+        <span>￥4496</span>
+        <a href="#">费用详情</a>
+    </div>
+    <div class="next_step">
+        下一步
+    </div>
+</div>
+<div id="tips"></div>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/resources.js"></script>
+</body>
+</html>
